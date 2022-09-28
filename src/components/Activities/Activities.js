@@ -7,12 +7,11 @@ const Activities = (props) => {
     carts.forEach(cart => {
         totalTime = totalTime + cart.time;
     });
-
     const AddBreak = (e) => {
         setBreaktimes(e);
+        localStorage.setItem('break-time', e);
     }
 
-    console.log(breaktimes);
     return (
         <div className='activity-container'>
             <div>
