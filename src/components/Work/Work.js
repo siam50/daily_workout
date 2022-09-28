@@ -10,7 +10,9 @@ const Work = (props) => {
             <h3>{name}</h3>
             <p>{description}</p>
             <h4>Time: {time}s</h4>
-            <button onClick={() => handler(work)}>Add to List</button>
+            <div className='addlist-btn'>
+                <button onClick={() => handler(work)}>Add to List</button>
+            </div>
         </div>
     );
 };

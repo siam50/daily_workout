@@ -8,11 +8,7 @@ const Activities = (props) => {
         totalTime = totalTime + cart.time;
     });
 
-    // let breakTime = 0;
-
     const AddBreak = (e) => {
-        // const value = parseInt(e);
-        // breakTime = breakTime + value;
         setBreaktimes(e);
     }
 
