@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Activities.css";
 const Activities = (props) => {
+    const [breaktimes, setBreaktimes] = useState(0)
     const { carts } = props;
     let totalTime = 0;
     carts.forEach(cart => {
         totalTime = totalTime + cart.time;
     });
-    // console.log(times)
+
+    // let breakTime = 0;
+
+    const AddBreak = (e) => {
+        // const value = parseInt(e);
+        // breakTime = breakTime + value;
+        setBreaktimes(e);
+    }
+
+    console.log(breaktimes);
     return (
         <div className='activity-container'>
             <div>
@@ -17,17 +27,24 @@ const Activities = (props) => {
             <div>
                 <h3>Add a Break</h3>
                 <div className='break-btn'>
-                    <button>10</button>
-                    <button>20</button>
-                    <button>30</button>
-                    <button>50</button>
+                    <button onClick={(e) => AddBreak(e.target.innerText)}>10</button>
+                    <button onClick={(e) => AddBreak(e.target.innerText)}>20</button>
+                    <button onClick={(e) => AddBreak(e.target.innerText)}>30</button>
+                    <button onClick={(e) => AddBreak(e.target.innerText)}>50</button>
                 </div>
             </div>
             <div>
-                <h3>Excirsice Details</h3>
-                <div>
-                    <h3>Excirsice Time</h3>
-                    <p>{totalTime}</p>
+                <h3>Excercise Details</h3>
+                <div className='excersice-time'>
+                    <h3>Excersice Time</h3>
+                    <p>{totalTime} Secounds</p>
+                </div>
+                <div className='break-time'>
+                    <h3>Break Time</h3>
+                    <p>{breaktimes} Secounds</p>
+                </div>
+                <div className='activity-btn'>
+                    <button>Acrtivity Completed</button>
                 </div>
             </div>
         </div>

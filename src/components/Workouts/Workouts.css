@@ -7,4 +7,11 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    padding: 25px;
+
+}
+
+.activities-container {
+    padding: 25px;
+    background-color: bisque;
 }

@@ -1,11 +1,36 @@
-.activity-container {
-    background-color: bisque;
-}
-
 .break-btn {
     background-color: azure;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
-    padding: 20px;
+    padding: 20px 15px;
+}
+
+.excersice-time {
+    background-color: azure;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.break-time {
+    background-color: azure;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.activity-btn {
+    text-align: center;
+}
+
+.activity-btn button {
+    background-color: orange;
+    padding: 10px 25px;
+    border: none;
+
 }
