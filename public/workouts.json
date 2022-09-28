@@ -2,37 +2,43 @@
   {
     "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
     "name": "PUSHUP",
+    "description": "If you want something you've never had, you must be willing to do something you've never done. The body achieves what the mind believes.",
     "time": 20,
     "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/press-1607686180.jpg?crop=1.00xw:1.00xh;0,0&resize=640:*"
   },
   {
     "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
     "name": "WALKING",
+    "description": "If you want something you've never had, you must be willing to do something you've never done. The body achieves what the mind believes.",
     "time": 30,
-    "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg"
+    "img": "https://media.istockphoto.com/photos/mid-aged-woman-running-in-city-park-picture-id1094475872?b=1&k=20&m=1094475872&s=612x612&w=0&h=xcuNWOCBQ7hxaoHrHtMaNJ3z66BfBijtQE6BD6tXTN4="
   },
   {
     "id": "307f166f-1d04-4573-bc37-2f461ea9d4f7",
     "name": "RUNNING",
+    "description": "If you want something you've never had, you must be willing to do something you've never done. The body achieves what the mind believes.",
     "time": 10,
-    "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg"
+    "img": "https://thumbs.dreamstime.com/b/four-female-friends-running-together-autumn-along-road-colorful-fall-park-viewed-behind-healthy-lifestyle-79978372.jpg"
   },
   {
     "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
-    "name": "BELY PUSH",
+    "name": "BELLY PUSH",
+    "description": "If you want something you've never had, you must be willing to do something you've never done. The body achieves what the mind believes.",
     "time": 10,
-    "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg"
+    "img": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29ya291dHxlbnwwfHwwfHw%3D&w=1000&q=80"
   },
   {
     "id": "9496d72b-04ec-41f8-9bc3-0a7c9697be8e",
-    "name": "DUMBLE",
+    "name": "MUSCLE",
+    "description": "If you want something you've never had, you must be willing to do something you've never done. The body achieves what the mind believes.",
     "time": 40,
-    "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg"
+    "img": "https://thumbs.dreamstime.com/b/young-strong-sweaty-man-biceps-workout-training-heavy-dumbbell-gym-dark-image-shadows-real-people-muscular-big-muscles-157587079.jpg"
   },
   {
     "id": "6e5593d3-557b-43cf-8dab-a5140faedfb0",
     "name": "JUMPING",
+    "description": "If you want something you've never had, you must be willing to do something you've never done. The body achieves what the mind believes.",
     "time": 20,
-    "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg"
+    "img": "https://www.eatthis.com/wp-content/uploads/sites/4/2022/03/My-project-2022-03-09T122915.104.jpg?quality=82&strip=all&w=640"
   }
 ]

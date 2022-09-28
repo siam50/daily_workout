@@ -1,4 +1,17 @@
+.work-card {
+    width: 300px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
 .work-card img {
     width: 300px;
 
+}
+
+.work-card button {
+    background-color: orange;
+    padding: 5px 25px;
 }
