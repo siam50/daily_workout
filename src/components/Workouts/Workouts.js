@@ -19,7 +19,7 @@ const Workouts = () => {
         <div className='workouts-container'>
             <div className='works-container'>
                 {
-                    works.map(work => <Work work={work} handler={AddHandler}></Work>)
+                    works.map(work => <Work work={work} handler={AddHandler} key={work.id}></Work>)
                 }
             </div>
             <div className='activities-container'>

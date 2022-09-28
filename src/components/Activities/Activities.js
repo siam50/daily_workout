@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./Activities.css";
 const Activities = (props) => {
     const [breaktimes, setBreaktimes] = useState(0)
@@ -7,10 +7,17 @@ const Activities = (props) => {
     carts.forEach(cart => {
         totalTime = totalTime + cart.time;
     });
+
     const AddBreak = (e) => {
         setBreaktimes(e);
         localStorage.setItem('break-time', e);
     }
+
+    useEffect(() => {
+        const getLocalStore = localStorage.getItem('break-time');
+        setBreaktimes(getLocalStore);
+
+    }, [breaktimes])
 
     return (
         <div className='activity-container'>
