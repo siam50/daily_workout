@@ -14,7 +14,7 @@
 
 .activities-container {
     padding: 25px;
-    background-color: bisque;
+    /* background-color: bisque; */
 }
 
 @media screen and (max-width: 576px) {

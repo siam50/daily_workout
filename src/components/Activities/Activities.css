@@ -3,15 +3,25 @@
 }
 
 .break-btn {
-    background-color: azure;
+    border: 1px solid gray;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
-    padding: 20px 15px;
+    padding: 20px 10px;
+}
+
+.break-btn button {
+    background-color: orange;
+    border: none;
+    padding: 5px;
+}
+
+.break-btn button:hover {
+    background-color: orangered;
 }
 
 .excersice-time {
-    background-color: azure;
+    border: 1px solid gray;
     padding: 0px 10px;
     display: flex;
     justify-content: space-between;
@@ -19,7 +29,7 @@
 }
 
 .break-time {
-    background-color: azure;
+    border: 1px solid gray;
     padding: 0px 10px;
     display: flex;
     justify-content: space-between;
@@ -37,6 +47,10 @@
     padding: 10px 25px;
     border: none;
 
+}
+
+.activity-btn button:hover {
+    background-color: orangered;
 }
 
 @media screen and (min-width: 577px) and (max-width: 992px) {

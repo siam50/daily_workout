@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "./Activities.css";
+import Swal from 'sweetalert2';
 const Activities = (props) => {
     const [breaktimes, setBreaktimes] = useState(0)
     const { carts } = props;
@@ -11,7 +12,7 @@ const Activities = (props) => {
     const AddBreak = (e) => {
         setBreaktimes(e);
         localStorage.setItem('break-time', e);
-    }
+    };
 
     useEffect(() => {
         const getLocalStore = localStorage.getItem('break-time');
@@ -19,7 +20,15 @@ const Activities = (props) => {
             setBreaktimes(getLocalStore);
         }
 
-    }, [breaktimes])
+    }, [breaktimes]);
+
+    const Alert = () => {
+        Swal.fire(
+            'Good job!',
+            'Task Completed!',
+            'success'
+        )
+    };
 
     return (
         <div className='activity-container'>
@@ -33,10 +42,10 @@ const Activities = (props) => {
             <div>
                 <h3>Add a Break</h3>
                 <div className='break-btn'>
-                    <button onClick={(e) => AddBreak(e.target.innerText)}>10</button>
-                    <button onClick={(e) => AddBreak(e.target.innerText)}>20</button>
-                    <button onClick={(e) => AddBreak(e.target.innerText)}>30</button>
-                    <button onClick={(e) => AddBreak(e.target.innerText)}>50</button>
+                    <button onClick={(e) => AddBreak(e.target.innerText)}><strong>10</strong></button>
+                    <button onClick={(e) => AddBreak(e.target.innerText)}><strong>20</strong></button>
+                    <button onClick={(e) => AddBreak(e.target.innerText)}><strong>30</strong></button>
+                    <button onClick={(e) => AddBreak(e.target.innerText)}><strong>40</strong></button>
                 </div>
             </div>
             <div className='excersice-details'>
@@ -50,7 +59,7 @@ const Activities = (props) => {
                     <p>{breaktimes} Secounds</p>
                 </div>
                 <div className='activity-btn'>
-                    <button>Activity Completed</button>
+                    <button onClick={Alert}>Activity Completed</button>
                 </div>
             </div>
         </div>
