@@ -36,6 +36,7 @@ const Activities = (props) => {
                 <h3>Information</h3>
                 <p><strong>Name:</strong> Md. Siamur Rahman</p>
                 <p><strong>Study:</strong> Completed Bsc in CSE from Southeast University.</p>
+                <p><strong>Skills:</strong> Html, Css, Bootstrap, Tailwind, JavaScript, React</p>
                 <p><strong>Hobbies:</strong> Coding, Travelling, gardening</p>
                 <p><strong>Address:</strong> Manikdi Namapara, Dhaka Cantonment, Dhaka 1206</p>
             </div>
