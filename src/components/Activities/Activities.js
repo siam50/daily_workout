@@ -22,12 +22,17 @@ const Activities = (props) => {
 
     }, [breaktimes]);
 
-    const Alert = () => {
-        Swal.fire(
-            'Good job!',
-            'Task Completed!',
-            'success'
-        )
+    const Toast = () => {
+
+        Swal.fire({
+            text: 'Task Completed',
+            target: '#custom-target',
+            customClass: {
+                container: 'position-absolute'
+            },
+            toast: true,
+            position: 'bottom-right'
+        })
     };
 
     return (
@@ -60,7 +65,7 @@ const Activities = (props) => {
                     <p>{breaktimes} Secounds</p>
                 </div>
                 <div className='activity-btn'>
-                    <button onClick={Alert}>Activity Completed</button>
+                    <button onClick={Toast}>Activity Completed</button>
                 </div>
             </div>
         </div>
