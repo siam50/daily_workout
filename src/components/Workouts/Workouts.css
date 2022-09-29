@@ -6,7 +6,8 @@
 .works-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    justify-items: center;
+    gap: 30px;
     padding: 25px;
 
 }
@@ -14,4 +15,31 @@
 .activities-container {
     padding: 25px;
     background-color: bisque;
+}
+
+@media screen and (max-width: 576px) {
+    .workouts-container {
+        display: block;
+    }
+
+    .works-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 25px;
+
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .workouts-container {
+        display: block;
+    }
+
+    .works-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 25px;
+    }
 }

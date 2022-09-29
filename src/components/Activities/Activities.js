@@ -15,16 +15,20 @@ const Activities = (props) => {
 
     useEffect(() => {
         const getLocalStore = localStorage.getItem('break-time');
-        setBreaktimes(getLocalStore);
+        if (getLocalStore) {
+            setBreaktimes(getLocalStore);
+        }
 
     }, [breaktimes])
 
     return (
         <div className='activity-container'>
             <div>
-                <h3>Md. Siamur Rahman</h3>
-                <p>Completed Bsc in CSE from Southeast University.</p>
-                <p>Address: Dhaka Cantonment</p>
+                <h3>Information</h3>
+                <p><strong>Name:</strong> Md. Siamur Rahman</p>
+                <p><strong>Study:</strong> Completed Bsc in CSE from Southeast University.</p>
+                <p><strong>Hobbies:</strong> Coding, Travelling, gardening</p>
+                <p><strong>Address:</strong> Manikdi Namapara, Dhaka Cantonment, Dhaka 1206</p>
             </div>
             <div>
                 <h3>Add a Break</h3>
@@ -35,7 +39,7 @@ const Activities = (props) => {
                     <button onClick={(e) => AddBreak(e.target.innerText)}>50</button>
                 </div>
             </div>
-            <div>
+            <div className='excersice-details'>
                 <h3>Excercise Details</h3>
                 <div className='excersice-time'>
                     <h3>Excersice Time</h3>
@@ -46,7 +50,7 @@ const Activities = (props) => {
                     <p>{breaktimes} Secounds</p>
                 </div>
                 <div className='activity-btn'>
-                    <button>Acrtivity Completed</button>
+                    <button>Activity Completed</button>
                 </div>
             </div>
         </div>

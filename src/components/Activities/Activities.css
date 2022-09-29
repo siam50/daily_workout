@@ -1,3 +1,7 @@
+.activity-container h3 {
+    text-align: center;
+}
+
 .break-btn {
     background-color: azure;
     display: grid;
@@ -33,4 +37,24 @@
     padding: 10px 25px;
     border: none;
 
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+
+    .break-btn {
+        gap: 25px;
+        padding: 20px 50px;
+    }
+
+    .break-btn button {
+        padding: 10px 10px;
+    }
+
+    .excersice-time {
+        padding: 10px 50px;
+    }
+
+    .break-time {
+        padding: 10px 50px;
+    }
 }
